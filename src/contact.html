@@ -1,0 +1,111 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="./css/bootstrap-5.3.5-dist/css/bootstrap.min.css">
+
+</head>
+
+<body>
+    <div class="container">
+        <!--navbar-->
+        <nav class="navbar navbar-expand-lg bg-body-tertiary">
+            <div class="container-fluid">
+                <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
+                    data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent"
+                    aria-expanded="false" aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+                <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                    <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+                        <li class="nav-item">
+                            <a class="nav-link active" aria-current="page" href="./index.html">Home</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="./findus.html">Find us</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="./contact.html">Contact</a>
+                        </li>
+               
+                    </ul>
+                 
+                </div>
+            </div>
+        </nav>
+        <div class="container">
+            <div class="row" style="background-color: #cadefb; border-radius: 5px;">
+                <div class="col-md-6 p-5">
+                    <br><br>
+                    <h1 style="font-weight: 700;">Not Convinced?</h1>
+                    <h5>Get in touch</h5>
+                </div>
+                <div class="col-md-6 d-flex justify-content-center align-items-center">
+                    <img src="https://external-content.duckduckgo.com/iu/?u=https%3A%2F%2Fwww.onlygfx.com%2Fwp-content%2Fuploads%2F2018%2F08%2F4-old-telephone-drawing-1-1024x911.png&f=1&nofb=1&ipt=bcecfab947dbe69d04e8760b91b009a30a4303bbb9a9f5116581eb989cf754ea" 
+                         alt="Placeholder Image"
+                         class="img-fluid p-4" 
+                         style="max-height: 250px; object-fit: contain;">
+                </div>
+            </div>
+          
+          <form>
+            <br><br>
+            <div class="mb-3">
+                <label for="title" class="form-label">Title</label>
+                <select class="form-select" id="title" required>
+                    <option value="" disabled selected>Select Title</option>
+                    <option value="Mr">Mr.</option>
+                    <option value="Mrs">Mrs.</option>
+                    <option value="Ms">Ms.</option>
+                    <option value="Dr">Dr.</option>
+                </select>
+            </div>
+    
+            <div class="mb-3">
+                <label for="name" class="form-label">Name</label>
+                <input type="text" class="form-control" id="name" placeholder="Enter your name" required>
+            </div>
+    
+            <div class="mb-3">
+                <label for="message" class="form-label">Message</label>
+                <textarea class="form-control" id="message" rows="4" placeholder="Enter your message" required></textarea>
+                
+            </div>
+            <button type="submit" class="btn btn-primary">Send Message</button>
+
+    
+        </form>
+
+    </div>
+    </div>
+    <br><br>
+    <footer class="bg-dark pt-5 pb-4 text-white">
+        <div class="container">
+          <div class="row">
+            <div class="col">
+              <h6 class="">About</h6>
+              <p class="">Providing high quality device repairs est 2025</p>
+            </div>
+            <div class="col">
+              <h6 class="">Resources</h6>
+              <p><a href="./findus.html" class="text-white">Find us</a></p>
+              <p><a href="./contact.html" class="text-white">contact</a></p>
+              <p><a href="./index.html" class="text-white">Home</a></p>
+             
+            </div>
+            <div class="col">
+              <h6 class="">Contact</h6>
+              <p><i class=" fa-home mr-3"></i>Eyre Square, Galway, H91 A93F</p>
+              <p><i class="fas fa-envelope mr-3"></i> contact@fastrepairs.ie</p>
+              <p><i class="fas fa-phone mr-3"></i> + 0859284827</p>
+            </div>
+          </div>
+        </div>
+      
+      </footer>
+</body>
+
+</html>

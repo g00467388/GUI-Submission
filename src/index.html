@@ -5,68 +5,144 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
-    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.5/dist/css/bootstrap.min.css" rel="stylesheet"
-        integrity="sha384-SgOJa3DmI69IUzQ2PVdRZhwQ+dy64/BUtbMJw1MZ8t5HZApcHrRKUc4W0kG879m7" crossorigin="anonymous">
-    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.5/dist/js/bootstrap.bundle.min.js"
-        integrity="sha384-k6d4wzSIapyDyv1kpU366/PK5hCdSbCRGRCMv+eplOQJWyd1fbcAu9OCUj5zNLiq"
-        crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="./css/bootstrap-5.3.5-dist/css/bootstrap.min.css">
 </head>
 
 <body>
+    <!-- NAVBAR -->
+    <div class="container">
+        <nav class="navbar navbar-expand-lg bg-body-tertiary">
+            <div class="container-fluid">
+                <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
+                    data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent"
+                    aria-expanded="false" aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+                <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                    <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+                        <li class="nav-item">
+                            <a class="nav-link active" aria-current="page" href="#">Home</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="./findus.html">Find us</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="./contact.html">Contact</a>
+                        </li>
+               
+                    </ul>
+                 
+                </div>
+            </div>
+        </nav>
+    </div>
+    <!---->
+
     <!-- Book repair & iPhone image -->
     <!--Image is to far left, Must have same margin as PS5 Image-->
-    <div class="container  ">
-        <div class="row ">
-            <div class="col">
-                <h1>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do lorem ipsum dolor</h1>
-            </div>
+    <div class="container">
 
-            <div class="col p-2 ms-5 ">
-                <img height="200em" src="resources/Misc/iphone.png" class="rounded ">
-            </div>
-        </div>
-        <button type="button" class="btn btn-primary">BOOK A REPAIR</button>
-        <button type="button" class="btn btn-secondary">FIND US</button>
+       
     </div>
-    <!--list of items that are repaired-->
+    <div class="container">
+        <div class="row" style="background-color: #cadefb; border-radius: 5px">
+          <div class="col-md-6 p-5">
+            <br><br>
+            <h1 style=" font-weight: 700;">Fast and affordable laptop, desktop and phone repairs</h1>
+            <button  type="button" class="btn btn-primary" style="width: 7.5em;"><a class="text-white" style="text-decoration: none;"  href="findus.html">Find us</a></button>
+          </div>
+          <div class="col-md-6">
+            <img src="./resources/Misc/freepik_br_86a2f5fc-a6ec-49c5-b6d0-ef2c18307092.png" alt="Placeholder Image" class="img-fluid">
+          </div>
+        </div>
+      </div>
+    <style>
+        .image-container {
+            width: 100%;      
+            height: 200px;   
+            overflow: hidden;
+        }
+    
+        .image-container img {
+            width: 100%;         
+            height: 100%;        
+            object-fit: cover;   
+        }
+    </style>
     <!--FIX: elements are not centered on mobile-->
-    <h2 class="text-center p-5">What would you like fixed?</h2>
+    <h2 class="text-center p-5" style="font-weight: 600;">What would you like fixed?</h2>
     <div class="container">
         <div class="row">
-            <!--TODO: cards should be clickable and redirect to a purchase page-->
+            <!--TODO: cards should be clickable and redirect to a page allowing user to select repair plan-->
             <div class="col">
                 <div class="card" style="width: 18rem;">
                     <img src="resources/devices/iphone.png" class="card-img-top" alt="Image of iPhone">
                     <div class="card-body">
-                      <p class="card-text text-center">iPhone repair</p>
+                        <p class="card-text text-center" style="font-weight: 500;">iPhone repair</p>
+                        <div class="row justify-content-center">
+                            <a class="row justify-content-center" href="repairs/iPhoneRepair.html">
+                                <button style="max-width: 10em;" class="btn btn-primary">Book repair</button>
+                            </a>
+                        </div>
+
                     </div>
-                  </div>
+                </div>
             </div>
             <div class="col">
                 <div class="card" style="width: 18rem;">
                     <img src="resources/devices/macbook.png" class="card-img-top" alt="Image of macbook">
                     <div class="card-body">
-                      <p class="card-text text-center">Macbook Repair</p>
+                        <p class="card-text text-center" style="font-weight: 500;">Macbook Repair</p>
+                        <div class="row justify-content-center">
+                            <a class="row justify-content-center" href="repairs/iPhoneRepair.html">
+                                <button style="max-width: 10em;" class="btn btn-primary">Book repair</button>
+                            </a>
+                        </div>
                     </div>
-                  </div>
+
+                </div>
             </div>
             <div class="col">
                 <div class="card" style="width: 18rem;">
                     <img src="resources/devices/laptop.png" class="card-img-top" alt="Image of laptop">
                     <div class="card-body">
-                      <p class="card-text text-center">Laptop repair</p>
+                        <p class="card-text text-center" style="font-weight: 500;">Laptop repair</p>
+                        <div class="row justify-content-center">
+                            <a class="row justify-content-center" href="repairs/iPhoneRepair.html">
+                                <button style="max-width: 10em;" class="btn btn-primary">Book repair</button>
+                            </a>
+                        </div>
                     </div>
-                  </div>
+                </div>
             </div>
-            <div class="col">
-                <div class="card" style="width: 18rem;">
-                    <img src="resources/devices/nogames.png" class="card-img-top" alt="Image of playstation">
-                    <div class="card-body">
-                      <p class="card-text text-center">Playstation repair</p>
-                    </div>
-                  </div>
-            </div>
+
         </div>
     </div>
+    <br><br><br>
+    <footer class="bg-dark pt-5 pb-4 text-white">
+        <div class="container">
+          <div class="row">
+            <div class="col">
+              <h6 class="">About</h6>
+              <p class="">Providing high quality device repairs est 2025</p>
+            </div>
+            <div class="col">
+              <h6 class="">Resources</h6>
+              <p><a href="./findus.html" class="text-white">Find us</a></p>
+              <p><a href="./contact.html" class="text-white">contact</a></p>
+              <p><a href="./index.html" class="text-white">Home</a></p>
+             
+            </div>
+            <div class="col">
+              <h6 class="">Contact</h6>
+              <p><i class=" fa-home mr-3"></i>Eyre Square, Galway, H91 A93F</p>
+              <p><i class="fas fa-envelope mr-3"></i> contact@fastrepairs.ie</p>
+              <p><i class="fas fa-phone mr-3"></i> + 0859284827</p>
+            </div>
+          </div>
+        </div>
+      
+      </footer>
 </body>
+
 </html>
